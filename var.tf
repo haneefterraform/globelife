@@ -56,7 +56,11 @@ variable "volume_size" {
 
 }
 */
-
+variable "root_voulme_size" {
+  type = number
+  description = "root voulume size"
+  default = 100
+}
 variable "data_drives" {
   description = "List of data drives to attach"
   type = list(object({

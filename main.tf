@@ -16,7 +16,7 @@ resource "aws_instance" "windows" {
     volume_type           = "gp3"
     iops                  = 3000
     throughput            = 125
-    volume_size           = 30
+    volume_size           = var.root_voulme_size
     delete_on_termination = true
     #tags                  = local.common_tags_dev
   }
