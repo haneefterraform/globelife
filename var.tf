@@ -98,6 +98,6 @@ variable "request" {
 
 variable "env" {
   type    = string
-  default = "dev"
+  default = "prod"
 
 }
